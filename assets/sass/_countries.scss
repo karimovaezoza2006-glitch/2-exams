@@ -1,0 +1,55 @@
+@use "./mixins" as*;
+.countries{
+    @include flex;
+    h4{
+        width: 90%;
+    font-weight: 200;
+    font-size: 50px;
+    line-height: 0.947;
+    text-transform: uppercase;
+    color: #000;
+    padding-bottom: 15px;
+    span{
+        font-weight: bold;
+    }
+    }
+    p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.547;
+    color: #000;
+       padding-bottom: 15px;
+    }
+    .btn{
+    width: 350px;
+    height: 50px;
+    background: #fead04;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.377;
+    color: #fff;
+    }
+}
+@media screen and (max-width: 768px) {
+  .countries {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h4 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 14px;
+      padding: 0 10px 15px 10px;
+    }
+
+    .btn {
+      width: 200px;
+      height: 45px;
+      font-size: 14px;
+    }
+  }
+    
+}

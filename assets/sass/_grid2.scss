@@ -1,0 +1,105 @@
+.complexes {
+  padding: 50px 0;
+   h4{
+    font-weight: 200;
+    font-size: 50px;
+    line-height: 1.377;
+    text-transform: uppercase;
+    color: #000;
+    padding: 20px 0;
+    span{
+        font-weight: bold;
+    }
+    }
+
+  .complexes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+  }
+
+  .complex-item {
+    position: relative;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+    // shaffof oq qatlam
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.4);
+      z-index: 1;
+    }
+
+    .label {
+      position: absolute;
+      top: 15px;
+      left: 0;
+      background-color: #FFA800;
+      color: #fff;
+      font-weight: 600;
+      font-size: 13px;
+      padding: 6px 15px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      z-index: 2;
+      max-width: 60%;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.022;
+    color: #fff;
+    }
+
+    img {
+      position: relative;
+      z-index: 2;
+      max-height: 80%;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .complexes {
+    padding: 30px 0;
+
+    h4 {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .complexes-grid {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+
+    .complex-item {
+      height: 200px;
+
+      .label {
+        font-size: 14px;
+        padding: 4px 10px;
+        max-width: 70%;
+      }
+
+      img {
+        max-height: 70%;
+      }
+    }
+  }
+    
+}

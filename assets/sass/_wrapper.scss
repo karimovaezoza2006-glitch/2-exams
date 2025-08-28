@@ -1,0 +1,158 @@
+@use "./mixins"  as*;
+.wrapper_main{
+    @include flex;
+    padding: 50px 0;
+}
+.wrapper_center{
+    h4{
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 1.147;
+    text-transform: uppercase;
+    color: #fead04;
+    }
+    p{
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 1.147;
+    color: #000;
+    padding: 10px 0;
+    }
+    .btn2{
+    background: #fead04;
+    width: 255px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.377;
+    text-align: center;
+    color: #fff;
+    }
+    
+}
+.wrapper_left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+}
+
+.wrapper_left h2 {
+  writing-mode: vertical-rl; 
+transform: rotate(180deg);
+font-weight: 900;
+font-size: 20px;
+line-height: 1.377;
+color: #000;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.social-links a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+  min-width: 20px;
+  transition: 0.3s;
+  color: #fff;
+  background:  #fead04;; /* default sariq fon */
+}
+
+.social-links a:hover {
+  opacity: 0.5;
+}
+.wrapper_left .line {
+ border:1px solid #000;
+ height: 40px;
+}
+@media screen and (max-width: 1200px) {
+  .wrapper_main {
+    padding: 40px 20px;
+  }
+
+  .wrapper_center h4 {
+    font-size: 40px;
+  }
+
+  .wrapper_center p {
+    font-size: 28px;
+  }
+
+  .wrapper_center .btn2 {
+    width: 220px;
+    height: 45px;
+    font-size: 14px;
+  }
+   .wrapper_left {
+    display: none;
+  }
+    
+}
+@media screen and (max-width: 992px) {
+
+  .wrapper_main {
+    padding: 35px 15px;
+  }
+
+  .wrapper_center h4 {
+    font-size: 25px;
+  }
+
+  .wrapper_center p {
+    font-size: 20px;
+  }
+
+  .wrapper_center .btn2 {
+    width: 240px;
+    height: 48px;
+    font-size: 15px;
+  }
+    
+}
+@media (max-width: 768px) {
+  .wrapper_main {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 30px 10px;
+  }
+
+  .wrapper_center h4 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .wrapper_center p {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .wrapper_center .btn2 {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+
+ 
+
+  .wrapper_left h2 {
+    writing-mode: horizontal-tb;
+    transform: none;
+  }
+
+  .social-links {
+    flex-direction: row;
+  }
+
+  .wrapper_left .line {
+    width: 40px;
+    height: 1px;
+  }
+}

@@ -1,0 +1,87 @@
+.partners {
+  padding: 40px 0;
+  background: #fff;
+
+  h2 {
+    font-weight: 200;
+    font-size: 50px;
+    line-height: 1.167;
+    text-transform: uppercase;
+    color: #000;
+    padding-bottom: 15px;
+    span{
+        font-weight: bold;
+    }
+  }
+
+  .partners-scroll {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+    scrollbar-color: #f9a825 transparent; // scroll chiziq rangi
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+      height: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #f9a825; // sariq scroll chiziq
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .partner-item {
+      flex: 0 0 auto;
+      width: 217px;
+      height: 130px;
+      background: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 8px;
+
+     
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .partners-scroll {
+    gap: 15px;
+
+    .partner-item {
+      width: 150px;
+      height: 90px;
+    }
+    .h2 {
+      font-size: 36px;
+    }
+  }
+    
+}
+@media screen and (max-width: 480px) {
+  .partners-scroll {
+    gap: 10px;
+
+    .partner-item {
+      width: 120px;
+      height: 70px;
+    }
+    .h2 {
+      font-size: 28px;
+      text-align: center;
+    }
+  }
+    
+}

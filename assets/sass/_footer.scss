@@ -1,0 +1,144 @@
+footer {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+  font-size: 14px;
+  color: #333;
+
+  .footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .footer-left {
+  
+    max-width: 180px;
+
+    img {
+      height: 50px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin: 10px 0;
+      color: #777;
+      line-height: 1.4;
+    }
+
+    a {
+      color: orange;
+      font-weight: 500;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .subscribe {
+
+    min-width: 20px;
+
+    strong {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    form {
+      display: flex;
+
+      input {
+        min-width: 250px;
+        padding: 8px 10px;
+        border: 1px solid #ccc;
+        border-right: none;
+        border-radius: 4px 0 0 4px;
+        font-size: 14px;
+      }
+
+      button {
+        background: orange;
+        border: none;
+        padding: 0 15px;
+        color: #fff;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+
+        i {
+          font-size: 14px;
+        }
+
+        &:hover {
+          background: #e69500;
+        }
+      }
+    }
+  }
+
+  .footer-contacts {
+  display: flex;
+  gap: 50px;
+
+  strong {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+
+  .contact-section {
+    p {
+      margin: 6px 0;
+      font-size: 14px;
+
+      i {
+        color: orange;
+        margin-right: 8px;
+      }
+
+      a {
+        color: #333;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+          color: #007bff;
+        }
+      }
+    }
+  }
+
+  .email-section {
+    .social-icons {
+      margin-top: 10px;
+      display: flex;
+      gap: 12px;
+
+      a {
+        display: inline-flex;
+        background: #ffb400;
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 14px;
+
+        &:hover {
+          background: #e69500;
+        }
+      }
+    }
+  }
+}
+}
+.footer-col{
+    li{
+        padding: 7px 0;
+    }
+}

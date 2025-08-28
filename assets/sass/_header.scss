@@ -1,0 +1,117 @@
+@use "./global" as*;
+  header {
+  background: #f2f2f2; // Orqa fon rangi rasmga mos
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+
+  .header-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    img {
+      height: 50px;
+    }
+  }
+
+  .nav-links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+
+    ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+      padding: 0;
+      margin: 5px 0;
+
+      li a {
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+        color: #333;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        &:hover {
+          color: #007bff;
+        }
+      }
+    }
+
+    .top-row {
+      margin-bottom: 5px;
+    }
+  }
+
+  .header-tools {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .search-btn {
+      background: none;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      color: #333;
+
+      &:hover {
+        color: #007bff;
+      }
+    }
+
+    select {
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-weight: 600;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+        border-color: #007bff;
+      }
+    }
+
+    .contact-number {
+  display: flex;
+  flex-direction: column; // qator emas, ustma-ust
+  align-items: flex-start;
+  gap: 3px;
+  font-size: 14px;
+
+  span {
+    color: #666;
+    font-weight: normal;
+  }
+
+  .phone-line {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    i {
+      color: orange;
+    }
+
+    strong {
+      color: #000;
+      font-weight: 600;
+    }
+  }
+}
+
+  }
+}
+   #menu-toggle {
+      display: none;
+    }
+    
