@@ -1,5 +1,4 @@
-@use "./global" as*;
-  header {
+header {
   background: #f2f2f2; // Orqa fon rangi rasmga mos
   border-bottom: 1px solid #ddd;
   padding: 15px 0;
@@ -111,4 +110,55 @@
 
   }
 }
+.menu{
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .nav-links{
+    li a{
+      font-size: 12px;
+    }
+  }
   
+}
+
+  
+@media screen and (max-width: 1000px) {
+  header {
+    .header-wrapper {
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+    }
+.menu{
+  display: block;
+  i{
+    display: flex;
+  justify-content: center; /* gorizontal markaz */
+  align-items: center;     /* vertikal markaz */
+    color: #fff;
+    background-color: #fead04;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+}
+    .nav-links {
+     display: none;
+
+      ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+
+    .header-tools {
+      margin-top: 15px;
+
+      .contact-number {
+        display: none;
+      }
+    }
+  }
+  
+}
