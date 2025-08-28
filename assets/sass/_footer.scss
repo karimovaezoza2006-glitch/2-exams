@@ -1,179 +1,144 @@
 footer {
-  background-color: #f9f9f9;
-  padding: 40px 0;
-  font-size: 14px;
-  color: #333;
+  width: 100%;
+  padding: 80px 60px;
+}
 
-  .footer-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 40px;
-    align-items: flex-start;
-  }
-
-  .footer-left {
-  
-    img {
-      height: 50px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      margin: 10px 0;
-      color: #777;
-      line-height: 1.4;
-    }
-
-    a {
-      color: orange;
-      font-weight: 500;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-
-  .subscribe {
-
-    min-width: 20px;
-
-    strong {
-      display: block;
-      margin-bottom: 10px;
-    }
-
-    form {
-      display: flex;
-
-      input {
-
-        padding: 8px 10px;
-        border: 1px solid #ccc;
-        border-right: none;
-        border-radius: 4px 0 0 4px;
-        font-size: 14px;
-      }
-
-      button {
-        background: orange;
-        border: none;
-        padding: 0 15px;
-        color: #fff;
-        border-radius: 0 4px 4px 0;
-        cursor: pointer;
-
-        i {
-          font-size: 14px;
-        }
-
-        &:hover {
-          background: #e69500;
-        }
-      }
-    }
-  }
-
-  .footer-contacts {
+.footer-main {
+  width: 100%;
   display: flex;
-  gap: 50px;
+  justify-content: space-between;
+}
 
-  strong {
-    display: block;
-    font-weight: 700;
-    font-size: 18px;
-  }
+.footer-logo,
+.footer-subscribe,
+.footer-company,
+.footer-press {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  
+}
 
-  .contact-section {
-    p {
-      margin: 6px 0;
-      font-size: 14px;
+.footer-item-logo a {
+  text-decoration: underline;
+  color: #ffb005;
+}
 
-      i {
-        color: orange;
-        margin-right: 8px;
-      }
+.footer-copy {
+  font-size: 14px;
+  color: #808080;
+}
 
-      a {
-        color: #333;
-        text-decoration: none;
+.footer-link a {
+  color: black;
+  font-size: 14.5px;
+  
+}
 
-        &:hover {
-          text-decoration: underline;
-          color: #007bff;
-        }
-      }
-    }
-  }
+.footer-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 126%;
+}
 
-  .email-section {
-    .social-icons {
-      margin-top: 10px;
-      display: flex;
-      gap: 12px;
+.subscribe-input {
+  display: flex;
+  align-items: center;
+  
+}
 
-      a {
-        display: inline-flex;
-        background: #ffb400;
-        color: white;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        font-size: 14px;
+.subscribe-input input {
+  width: 260px;
+  padding: 10px 10px;
+  border-left: 1px solid #c5c3c3;
+  border-right: none;
+  border-top: 1px solid #c1bfbf;
+  border-bottom: 1px solid #c9c7c7;
+  
+}
 
-        &:hover {
-          background: #e69500;
-        }
-      }
+.subscribe-input button {
+  padding: 5px 10px;
+  border-left: none;
+  cursor: pointer;
+  background-color: #ffb005;
+  border: none;
+  
+}
+
+.footer-contacts {
+  display: flex;
+  gap: 2rem;
+  
+}
+
+.footer-contact-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  
+}
+
+.footer-subtitle {
+  font-weight: 600;
+  
+}
+
+.footer-icons {
+  display: flex;
+  gap: 1rem;
+ 
+ 
+
+  p {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdd480;
+    border-radius: 50px;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #ffbf00;
+      cursor: pointer;
     }
   }
 }
+.iicon a{
+  border-radius: 80%;
+  background-color: #ffbf00;
+  color: white;
+
 }
-.footer-col{
-    li{
-        padding: 7px 0;
-    }
+.iicon a:hover{
+  background-color: #ead4a8;
+
 }
 @media screen and (max-width: 1200px) {
-  .footer-wrapper {
-    gap: 30px;
+  footer {
+    padding: 60px 30px;
   }
   
 }
 @media screen and (max-width: 768px) {
-  .footer-wrapper {
+  .footer-main {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 2rem;
+  }
+
+  .footer-logo,
+  .footer-subscribe,
+  .footer-company,
+  .footer-press {
+    align-items: center;
   }
 
   .footer-contacts {
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-  }
-
-  .subscribe {
-    width: 100%;
-
-    form {
-      flex-direction: column;
-
-      input, button {
-        width: 100%;
-        border-radius: 4px;
-      }
-
-      button {
-        margin-top: 10px;
-        border-radius: 4px;
-      }
-    }
   }
   
 }
