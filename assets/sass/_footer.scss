@@ -14,8 +14,6 @@ footer {
 
   .footer-left {
   
-    max-width: 180px;
-
     img {
       height: 50px;
       margin-bottom: 10px;
@@ -51,7 +49,7 @@ footer {
       display: flex;
 
       input {
-        min-width: 250px;
+
         padding: 8px 10px;
         border: 1px solid #ccc;
         border-right: none;
@@ -85,7 +83,6 @@ footer {
   strong {
     display: block;
     font-weight: 700;
-    margin-bottom: 15px;
     font-size: 18px;
   }
 
